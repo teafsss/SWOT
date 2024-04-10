@@ -31,10 +31,16 @@ cftime==1.6.3
     # via netcdf4
 charset-normalizer==3.3.2
     # via requests
+click==8.1.7
+    # via dask
+cloudpickle==3.0.0
+    # via dask
 contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
+dask==2024.4.1
+    # via -r requirements.in
 earthaccess==0.9.0
     # via -r requirements.in
 fonttools==4.51.0
@@ -45,6 +51,7 @@ frozenlist==1.4.1
     #   aiosignal
 fsspec==2024.3.1
     # via
+    #   dask
     #   earthaccess
     #   s3fs
 h5netcdf==1.3.0
@@ -55,10 +62,14 @@ idna==3.6
     # via
     #   requests
     #   yarl
+importlib-metadata==7.1.0
+    # via dask
 jmespath==1.0.1
     # via botocore
 kiwisolver==1.4.5
     # via matplotlib
+locket==1.0.0
+    # via partd
 matplotlib==3.8.4
     # via
     #   -r requirements.in
@@ -85,11 +96,14 @@ numpy==1.26.4
 packaging==24.0
     # via
     #   cartopy
+    #   dask
     #   h5netcdf
     #   matplotlib
     #   xarray
 pandas==2.2.1
     # via xarray
+partd==1.4.1
+    # via dask
 pillow==10.3.0
     # via matplotlib
 pqdm==0.2.0
@@ -110,6 +124,8 @@ python-dateutil==2.9.0.post0
     #   pandas
 pytz==2024.1
     # via pandas
+pyyaml==6.0.1
+    # via dask
 requests==2.31.0
     # via
     #   earthaccess
@@ -124,6 +140,10 @@ six==1.16.0
     # via python-dateutil
 tinynetrc==1.3.1
     # via earthaccess
+toolz==0.12.1
+    # via
+    #   dask
+    #   partd
 tqdm==4.66.2
     # via pqdm
 typing-extensions==4.11.0
@@ -140,3 +160,5 @@ xarray==2024.3.0
     # via -r requirements.in
 yarl==1.9.4
     # via aiohttp
+zipp==3.18.1
+    # via importlib-metadata

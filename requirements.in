@@ -5,3 +5,4 @@ cartopy
 matplotlib
 netcdf4
 h5netcdf
+dask
